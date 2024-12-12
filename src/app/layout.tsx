@@ -8,15 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Hicham TAAFRAOUTI',
   description: 'IT Student Portfolio',
-  icons: {
-    icon: [
-      {
-        url: '/favicon.png', // Nous allons créer ce fichier
-        type: 'image/png',
-        sizes: '32x32',
-      }
-    ],
-  },
+  icons: [{
+    rel: 'icon',
+    type: 'image/png',
+    url: '/favicon.png',
+  }],
 }
 export default function RootLayout({
   children,
