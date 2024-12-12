@@ -7,8 +7,6 @@ import {
   GraduationCap,
   Briefcase,
   Send,
-  Moon,
-  Sun,
   Github,
   Linkedin,
   Phone, 
@@ -248,7 +246,7 @@ export default function Portfolio() {
         <div className="md:w-1/2">
   <div className="relative w-96 h-96 mx-auto mb-8 md:mb-0">  {/* Changé de w-64 h-64 à w-96 h-96 */}
     <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
-    <img 
+    <Image 
       src="/profile.jpg"
       alt="Profile"
       className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
