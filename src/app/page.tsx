@@ -262,7 +262,7 @@ export default function Portfolio() {
           </div>
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl font-bold mb-4">
-              Hello, I'm Hicham TAAFRAOUTI
+              Hello, I&apos;m Hicham TAAFRAOUTI
             </h1>
             <p className="text-xl mb-6 text-gray-300">
               An IT Student passionate about web development.
