@@ -223,12 +223,7 @@ export default function Portfolio() {
             Hicham TAAFRAOUTI
           </div>
           <div className="flex space-x-6 items-center">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-full hover:bg-white/10 transition-colors"
-            >
-              {darkMode ? <Sun size={24} /> : <Moon size={24} />}
-            </button>
+            
             {navigationItems.map((item) => (
               <button 
                 key={item.id}
@@ -266,7 +261,7 @@ export default function Portfolio() {
               Hello, I&apos;m Hicham TAAFRAOUTI
             </h1>
             <p className="text-xl mb-6 text-gray-300">
-              An IT Student passionate about web development.
+              An IT Student passionate about development.
               BTS SIO SLAM graduate from Brest, France.
             </p>
             <div className="space-y-4">
@@ -275,7 +270,7 @@ export default function Portfolio() {
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a 
-                  href="https://github.com/your-github" 
+                  href="https://github.com/FHichamTa" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-300 hover:text-purple-400 transition-colors"
@@ -283,7 +278,7 @@ export default function Portfolio() {
                   <Github size={32} />
                 </a>
                 <a 
-                  href="https://linkedin.com/in/your-linkedin" 
+                  href="https://www.linkedin.com/in/hicham-taafraouti-b392642a1/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-300 hover:text-purple-400 transition-colors"
@@ -353,7 +348,7 @@ export default function Portfolio() {
     degree: 'BTS SIO Option SLAM',
     period: '2022-2024',
     type: 'Software Solutions and Business Applications',
-    achievements: ['Obtained', 'Voltaire Certificate: 708 R']
+    achievements: [ 'Voltaire Certificate: 708 R']
   },
   {
     school: 'Vauban High School',
@@ -402,7 +397,6 @@ export default function Portfolio() {
           {[
   {
     title: 'E-commerce Website (Coding Crew)',
-    logo: <Image src="/codingcrew.jpg" alt="Coding Crew Logo" width={48} height={48} className="w-12 h-12 object-contain"/>,
     period: '2024',
     type: 'Web Development Internship',
     description: 'Created a full-stack e-commerce website with associated database',
@@ -423,7 +417,6 @@ export default function Portfolio() {
   },
   {
     title: 'PDF Export System (Icicartegrise)',
-    logo: <Image src="/icicartegrise.jpg" alt="Icicartegrise Logo" width={48} height={48} className="w-12 h-12 object-contain"/>,
     period: '2023',
     type: 'Web Development Internship',
     description: 'Developed a system for exporting various certification forms to PDF',
@@ -436,7 +429,6 @@ export default function Portfolio() {
   >
     <div className="flex justify-between items-start mb-4">
       <div className="flex items-center gap-4">
-        {project.logo}
         <h3 className="text-2xl font-semibold text-purple-400">{project.title}</h3>
       </div>
       <span className="text-gray-400">{project.period}</span>
