@@ -12,12 +12,9 @@ import {
   Github,
   Linkedin,
   Phone, 
-  Mail, 
-  User, 
-  AtSign, 
-  MessageCircle
+  Mail
 } from 'lucide-react';
-import AnimatedBackground from './animatedbackground';
+import Image from 'next/image'
 // Animated Background Component
 const LocalAnimatedBackground: React.FC = () => {
   const [bubbles, setBubbles] = useState<Array<{
@@ -256,7 +253,7 @@ export default function Portfolio() {
           <div className="md:w-1/2">
             <div className="relative w-64 h-64 mx-auto mb-8 md:mb-0">
               <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
-              <img 
+              <Image 
                 src="/profile.jpg"
                 alt="Profile"
                 className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
@@ -404,7 +401,7 @@ export default function Portfolio() {
           {[
   {
     title: 'E-commerce Website (Coding Crew)',
-    logo: <img src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
+    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
     period: '2024',
     type: 'Web Development Internship',
     description: 'Created a full-stack e-commerce website with associated database',
@@ -418,7 +415,7 @@ export default function Portfolio() {
   },
   {
     title: 'Delivery Management App',
-    logo: <img src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
+    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
     period: '2022-2024',
     type: 'Web Development Project',
     description: 'Created a web application for managing driver orders and delivery schedules',
@@ -426,7 +423,7 @@ export default function Portfolio() {
   },
   {
     title: 'PDF Export System (Icicartegrise)',
-    logo: <img src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
+    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
     period: '2023',
     type: 'Web Development Internship',
     description: 'Developed a system for exporting various certification forms to PDF',
