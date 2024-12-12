@@ -4,11 +4,14 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Portfolio - Hicham TAAFRAOUTI',
-  description: 'IT Student Portfolio',
-}
 
+export const metadata: Metadata = {
+  title: 'Votre Nom - Portfolio',
+  description: 'Description de votre portfolio',
+  icons: {
+    icon: '/profile.jpg',
+  }
+}
 export default function RootLayout({
   children,
 }: {
