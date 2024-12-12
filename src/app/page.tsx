@@ -401,7 +401,7 @@ export default function Portfolio() {
           {[
   {
     title: 'E-commerce Website (Coding Crew)',
-    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
+    logo: <Image src="/codingcrew.jpg" alt="Coding Crew Logo" width={48} height={48} className="w-12 h-12 object-contain"/>,
     period: '2024',
     type: 'Web Development Internship',
     description: 'Created a full-stack e-commerce website with associated database',
@@ -415,7 +415,6 @@ export default function Portfolio() {
   },
   {
     title: 'Delivery Management App',
-    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
     period: '2022-2024',
     type: 'Web Development Project',
     description: 'Created a web application for managing driver orders and delivery schedules',
@@ -423,7 +422,7 @@ export default function Portfolio() {
   },
   {
     title: 'PDF Export System (Icicartegrise)',
-    logo: <Image src="https://images.app.goo.gl/ZjeEiHNAkLZxj4mf8" alt="" className="w-12 h-12 object-contain"/>,
+    logo: <Image src="/icicartegrise.jpg" alt="Icicartegrise Logo" width={48} height={48} className="w-12 h-12 object-contain"/>,
     period: '2023',
     type: 'Web Development Internship',
     description: 'Developed a system for exporting various certification forms to PDF',
