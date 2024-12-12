@@ -250,16 +250,17 @@ export default function Portfolio() {
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center pt-20">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2">
-            <div className="relative w-64 h-64 mx-auto mb-8 md:mb-0">
-              <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
-              <Image 
-                src="/profile.jpg"
-                alt="Profile"
-                className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
-              />
-            </div>
-          </div>
+        <div className="md:w-1/2">
+  <div className="relative w-96 h-96 mx-auto mb-8 md:mb-0">  {/* Changé de w-64 h-64 à w-96 h-96 */}
+    <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
+    <img 
+      src="/profile.jpg"
+      alt="Profile"
+      className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
+      style={{color: 'transparent'}}
+    />
+  </div>
+</div>
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl font-bold mb-4">
               Hello, I&apos;m Hicham TAAFRAOUTI

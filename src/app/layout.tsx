@@ -5,12 +5,18 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 
-export const metadata: Metadata = {
-  title: 'Votre Nom - Portfolio',
-  description: 'Description de votre portfolio',
+export const metadata = {
+  title: 'Hicham TAAFRAOUTI',
+  description: 'IT Student Portfolio',
   icons: {
-    icon: '/profile.jpg',
-  }
+    icon: [
+      {
+        url: '/favicon.png', // Nous allons créer ce fichier
+        type: 'image/png',
+        sizes: '32x32',
+      }
+    ],
+  },
 }
 export default function RootLayout({
   children,
