@@ -190,11 +190,8 @@ const skillCategories = [
 // Main Portfolio Component
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
-  const [darkMode, setDarkMode] = useState(true);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
