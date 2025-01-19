@@ -13,7 +13,6 @@ import {
   Mail
 } from 'lucide-react';
 import Image from 'next/image'
-// Animated Background Component
 const LocalAnimatedBackground: React.FC = () => {
   const [bubbles, setBubbles] = useState<Array<{
     id: number;
@@ -159,6 +158,18 @@ const GitLogo = () => (
   </svg>
 );
 
+const ProjectLogo: React.FC<{ src: string; alt: string }> = ({ src, alt }) => (
+  <div className="w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden p-2">
+    <Image
+      src={src}
+      alt={alt}
+      width={64}
+      height={64}
+      className="w-full h-full object-contain"
+    />
+  </div>
+);
+
 const skillCategories = [
   {
     title: 'Back-end',
@@ -237,20 +248,22 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Home Section */}
+      
       <section id="home" className="min-h-screen flex items-center pt-20">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2">
-  <div className="relative w-96 h-96 mx-auto mb-8 md:mb-0">  {/* Changé de w-64 h-64 à w-96 h-96 */}
-    <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
-    <Image 
-      src="/profile.jpg"
-      alt="Profile"
-      className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
-      style={{color: 'transparent'}}
-    />
-  </div>
-</div>
+  <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div className="md:w-1/2">
+      <div className="relative w-80 h-80 mx-auto mb-8 md:mb-0">  
+        <div className="absolute inset-0 rounded-full bg-purple-500/20 animate-pulse"></div>
+        <Image
+          src="/profile.jpg"
+          alt="Profile"
+          width={320}
+          height={320}
+          className="rounded-full w-full h-full object-cover shadow-xl relative z-10"
+          priority
+        />
+      </div>
+    </div>
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl font-bold mb-4">
               Hello, I&apos;m Hicham TAAFRAOUTI
@@ -261,7 +274,7 @@ export default function Portfolio() {
             </p>
             <div className="space-y-4">
               <p className="text-gray-300">
-                Looking for a work-study program: 1 week school / 3 weeks company
+                Looking for a work-study program: 1 week school / 3 weeks company from September 19th 2025.
               </p>
               <div className="flex justify-center md:justify-start space-x-4">
                 <a 
@@ -401,7 +414,8 @@ export default function Portfolio() {
       'Database modeling',
       'Planning and documentation'
     ],
-    technologies: ['React', 'TypeScript', 'NextJS', 'Supabase', 'VueJS', 'NodeJS']
+    technologies: ['React', 'TypeScript', 'NextJS', 'Supabase', 'NodeJS'],
+    logo: <ProjectLogo src="/codingcrew.jpg" alt="Coding Crew Logo" />
   },
   {
     title: 'Delivery Management App',
@@ -415,7 +429,15 @@ export default function Portfolio() {
     period: '2023',
     type: 'Web Development Internship',
     description: 'Developed a system for exporting various certification forms to PDF',
-    technologies: ['PHP', 'AJAX', 'NextJS', 'TypeScript']
+    technologies: ['PHP', 'AJAX', 'JavaScript'],
+    logo: <ProjectLogo src="/icicartegrise.svg" alt="Icicartegrise Logo" />
+  },
+  {
+    title: 'Apprenticeship at Fortil on assignment at Airbus',
+    period: '20/01/2025 - 19/09/2025',
+    type: 'Developper apprenticeship',
+    description: 'Got secret defense missions',
+    technologies: ['MySQL', 'C#', 'Visual Basic']
   }
 ].map((project) => (
   <div
@@ -454,30 +476,13 @@ export default function Portfolio() {
       </section>
       {/* Contact Section */}
 <section id="contact" className="min-h-screen py-20 relative overflow-hidden">
-  {/* Animated Background Bubbles */}
-  <div className="absolute inset-0 pointer-events-none">
-    {[...Array(20)].map((_, index) => (
-      <div 
-        key={index}
-        className="absolute bg-purple-500/10 rounded-full animate-float"
-        style={{
-          width: `${Math.random() * 100 + 50}px`,
-          height: `${Math.random() * 100 + 50}px`,
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          animationDelay: `${Math.random() * 5}s`,
-          animationDuration: `${Math.random() * 10 + 15}s`
-        }}
-      />
-    ))}
-  </div>
 
   <div className="container mx-auto px-4 relative z-10">
     <h2 className="text-5xl font-bold text-center mb-16">
       Contact<span className="text-purple-400">:</span>
     </h2>
     
-    <div className="max-w-2xl mx-auto"> {/* Centrer et élargir */}
+    <div className="max-w-2xl mx-auto"> {}
   <div className="bg-[#2A2735]/70 backdrop-blur-md rounded-xl p-12 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
    <h3 className="text-2xl font-semibold mb-6 text-purple-400">Get in Touch</h3>
         
@@ -533,8 +538,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-
-      {/* Contact Form */}
       
     </div>
   </div>
