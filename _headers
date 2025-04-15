@@ -1,0 +1,4 @@
+/* 
+  Content-Security-Policy: default-src 'self'; 
+                          img-src 'self' https://htaafraouti.fr https://supabase.com https://avatars.githubusercontent.com https://lh3.googleusercontent.com https://frontend-assets.supabase.com;
+                          font-src 'self' https://fonts.googleapis.com https://frontend-assets.supabase.com data:;
