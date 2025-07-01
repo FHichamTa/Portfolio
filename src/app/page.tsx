@@ -143,12 +143,13 @@ export default function Portfolio() {
   };
 
   const navigationItems = [
-    { id: 'home', icon: <HomeIcon size={24} />, label: 'Home' },
-    { id: 'skills', icon: <Code size={24} />, label: 'Skills' },
-    { id: 'education', icon: <GraduationCap size={24} />, label: 'Education' },
-    { id: 'projects', icon: <Briefcase size={24} />, label: 'Projects' },
-    { id: 'contact', icon: <Send size={24} />, label: 'Contact' }
-  ];
+  { id: 'home', icon: <HomeIcon size={24} />, label: 'Home' },
+  { id: 'skills', icon: <Code size={24} />, label: 'Skills' },
+  { id: 'education', icon: <GraduationCap size={24} />, label: 'Education' },
+  { id: 'projects', icon: <Briefcase size={24} />, label: 'Projects' },
+  { id: 'data-projects', icon: <Code size={24} />, label: 'Data' },
+  { id: 'contact', icon: <Send size={24} />, label: 'Contact' }
+];
 
   return (
     <main className="min-h-screen text-white relative">
@@ -418,6 +419,60 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Data Science Projects Section */}
+<section id="data-projects" className="min-h-screen py-20">
+  <div className="container mx-auto px-4">
+    <h2 className="text-5xl font-bold text-center mb-16">
+      Data Projects<span className="text-purple-400">:</span>
+    </h2>
+    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      
+      {/* Netflix Analysis */}
+      <div className="bg-[#1E1B2C] rounded-xl p-8 backdrop-blur-sm border border-gray-800 hover:border-purple-500/30 transition-all duration-300">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-2xl font-semibold text-purple-400">Netflix Data Analysis</h3>
+          <span className="text-gray-400">2025</span>
+        </div>
+        <p className="text-white mb-4">Data Science Project</p>
+        <p className="text-gray-300 mb-4">
+          Analysis of Netflix catalog with Python. Exploration of 8000+ movies and TV shows, 
+          trends by country, genre distribution, and content evolution over time.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-6">
+          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Python</span>
+          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Pandas</span>
+          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Matplotlib</span>
+          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Data Analysis</span>
+        </div>
+        <a
+          href="/data-projects/netflix"
+          className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded transition-colors"
+        >
+          View Project
+        </a>
+      </div>
+
+      {/* Placeholder for next project */}
+      <div className="bg-[#1E1B2C] rounded-xl p-8 backdrop-blur-sm border border-gray-800 opacity-60">
+        <div className="flex justify-between items-start mb-4">
+          <h3 className="text-2xl font-semibold text-gray-500">Next Data Project</h3>
+          <span className="text-gray-400">Coming Soon</span>
+        </div>
+        <p className="text-white mb-4">Data Science Project</p>
+        <p className="text-gray-300 mb-4">
+          More data science projects coming soon.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">Python</span>
+          <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">Machine Learning</span>
+          <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Contact Section */}
 <section id="contact" className="min-h-screen py-20 relative overflow-hidden">
 

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "generated_at": "2025-07-02T00:07:54.979453",
+    "data_source": "Real Netflix Data"
+  },
+  "stats": {
+    "total": 8556,
+    "movies": 5896,
+    "shows": 2660,
+    "year_min": 1990,
+    "year_max": 2021,
+    "peak_year": 2018,
+    "countries": 120,
+    "top_country": [
+      "United States",
+      3562
+    ],
+    "genres": 42,
+    "top_genre": [
+      "International Movies",
+      2657
+    ]
+  },
+  "insights": [
+    "8,556 titles analyzed",
+    "5,896 movies vs 2,660 TV shows",
+    "120 different countries",
+    "42 genres listed"
+  ]
+}
