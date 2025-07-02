@@ -443,13 +443,13 @@ export default function Portfolio() {
           <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Python</span>
           <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Pandas</span>
           <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Matplotlib</span>
-          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Data Analysis</span>
+          <span className="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-sm">Data analysis</span>
         </div>
         <a
           href="/data-projects/netflix"
           className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded transition-colors"
         >
-          View Project
+          View project
         </a>
       </div>
 
@@ -459,13 +459,13 @@ export default function Portfolio() {
           <h3 className="text-2xl font-semibold text-gray-500">Next Data Project</h3>
           <span className="text-gray-400">Coming Soon</span>
         </div>
-        <p className="text-white mb-4">Data Science Project</p>
+        <p className="text-white mb-4">Data science project</p>
         <p className="text-gray-300 mb-4">
           More data science projects coming soon.
         </p>
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">Python</span>
-          <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">Machine Learning</span>
+          <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">Machine learning</span>
           <span className="px-3 py-1 rounded-full bg-gray-500/10 text-gray-500 text-sm">In Progress</span>
         </div>
       </div>
