@@ -15,24 +15,7 @@ export default function NetflixAnalyzerPage() {
           >
             Back to portfolio
           </Link>
-            <a
-              href="#overview"
-              className="text-sm text-gray-300 hover:text-purple-400 transition-colors"
-            >
-              Overview
-            </a>
-            <a
-              href="#results"
-              className="text-sm text-gray-300 hover:text-purple-400 transition-colors"
-            >
-              Results
-            </a>
-            <a
-              href="#about"
-              className="text-sm text-gray-300 hover:text-purple-400 transition-colors"
-            >
-              About
-            </a>
+           
           </div>
         </div>
       </nav>
