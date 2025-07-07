@@ -70,7 +70,7 @@ export default function NetflixAnalyzerPage() {
          
           <div className="mt-8">
             <a
-              href="https://github.com/FHichamTa/Portfolio"
+              href="https://github.com/FHichamTa/Portfolio/tree/main/scripts"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg transition-colors font-semibold"
