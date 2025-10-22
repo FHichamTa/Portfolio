@@ -494,7 +494,7 @@ export default function Portfolio() {
             <div>
               <p className="text-gray-400 text-sm">Phone</p>
               <a 
-                href="tel:+33612345678" 
+                href="tel:+33652671104" 
                 className="text-white text-lg hover:text-purple-400 transition-colors"
               >
                 +33 6 52 67 11 04
@@ -510,7 +510,7 @@ export default function Portfolio() {
             <div>
               <p className="text-gray-400 text-sm">Email</p>
               <a 
-                href="mailto:hicham.taafraouti@gmail.com" 
+                href="mailto:htaafraouti@gmail.com" 
                 className="text-white text-lg hover:text-purple-400 transition-colors"
               >
                 htaafraouti@gmail.com
